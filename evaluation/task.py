@@ -1573,3 +1573,9 @@ class ConfigurableTask(Task):
 
     def __repr__(self):
         return f"ConfigurableTask(task_name={getattr(self.config, 'task', None)}," f"output_type={self.OUTPUT_TYPE}," f"num_fewshot={getattr(self.config, 'num_fewshot', None)}," f"num_samples={len(self.eval_docs)})"
+
+
+class ConfigurableMessagesTask(ConfigurableTask):
+    """ConfigurableMessagesTask is used for chat-based models that need message formatting.
+    For AKS project, we use the same implementation as ConfigurableTask."""
+    pass

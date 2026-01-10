@@ -78,6 +78,9 @@ def simple_evaluate(
     fewshot_random_seed: int = 1234,
     datetime_str: str = get_datetime_str(),
     cli_args=None,
+    distributed_executor_backend: Optional[str] = None,
+    force_simple: bool = False,
+    launcher_args: Optional[dict] = None,
 ):
     """Instantiate and evaluate a model on a list of tasks.
 
