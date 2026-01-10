@@ -48,7 +48,7 @@ outscores/
 selected_frames/
 
 # Datasets (uncomment if you don't want to commit datasets)
-# datasets/
+datasets/
 
 # Logs
 *.log
