@@ -1,6 +1,6 @@
 #!/bin/bash
 
-base_score_path=./selected_frames/longvideobench/blip
+base_score_path=./selected_frames/longvideobench/blip·
 score_type=selected_frames
 dataset_name=longvideobench
 
