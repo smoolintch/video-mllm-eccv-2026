@@ -1,5 +1,16 @@
 from qwen_vl_utils.vision_process import *
 
+# Define constants that might be missing from qwen_vl_utils import
+if 'IMAGE_FACTOR' not in globals():
+    IMAGE_FACTOR = 28
+if 'VIDEO_MIN_PIXELS' not in globals():
+    VIDEO_MIN_PIXELS = 128 * 28 * 28
+if 'VIDEO_MAX_PIXELS' not in globals():
+    VIDEO_MAX_PIXELS = 768 * 28 * 28
+if 'VIDEO_TOTAL_PIXELS' not in globals():
+    VIDEO_TOTAL_PIXELS = int(128000 * 28 * 28 * 0.9)
+
+
 
 def _read_video_decord_frame_idx(
     ele: dict, frame_idx: list, nframes: int
